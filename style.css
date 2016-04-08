@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin-top: -20px !important
+	}
+
+#wrapper {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto; 
+	overflow:hidden;
+	}
+	
+
+h1 {
+	font-size: 6rem;
+	}
+
+a, a:hover, a:visited {
+	color: rgba(0,0,0,1.00);
+	text-decoration: none; 
+	}
+
+nav {
+	float: left;
+	height: 500px;
+	width: 15%;
+	margin-right: 2%;}
+
+nav ul li {
+	display: block;}
+
+nav ul li a {
+	padding: 10px; }
+
+
+#content {
+	width: 80%;
+	height: 80%;
+	margin: 20px auto;}
+	
+#background_div {
+	position: absolute; 
+	z-index:-100;
+	overflow:hidden;
+	}
+
+ #background_img {
+	z-index:-150;
+	vertical-align:middle;
+	opacity: 0.34;
+	transition: opacity 0.5s;}
+
+footer {
+	clear: both;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	font-size:10px;
+	border-top: 1px solid;
+	text-align: center;	}
+
+
+
