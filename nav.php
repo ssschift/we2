@@ -1,8 +1,8 @@
 <nav>
 	<ul>
-		<li><a href="index.php">Home</a></li>
-		<li><a href="about.php">About us</a></li>
-		<li><a href="work.php">Work</a></li>
-		<li><a href="contact.php">Contact</a></li>
+		<li><a href="index.php">Atelier</a></li>
+		<li><a href="about.php">On location</a></li>
+		<li><a href="work.php">Landschaft</a></li>
+		<li><a href="contact.php">About</a></li>
 	</ul>
 </nav>

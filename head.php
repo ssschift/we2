@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>FABIANS ONKEL  </title>
+<title>Atelier Lightning </title>
 
 <!-- BOOTSTRAP -->
 <!-- Latest compiled and minified CSS -->
@@ -18,7 +18,3 @@
 
 
 </head>
-
-
-
-
