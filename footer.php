@@ -1,12 +1,5 @@
 
 
-
-			</div>
-
-		<footer>
-
-			<?php echo date("Y"); ?> INDIVIDUAL
+<?php echo date("Y"); ?> Fabians Onkel <br> Link zu unserer Dokumentation </br>
 			
-		</footer>
-	</body>
-</html>
+	

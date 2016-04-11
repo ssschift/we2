@@ -1,7 +1,4 @@
-<div id="content">
-	<div id="bild-container">
-    	
-        <p>
+<p>
             asölfkjaöslkdjfölaskdjfölaskdj
         asdfaslkjdfölaskdjfölas
         sadfljasöldkfj
@@ -22,7 +19,4 @@
         sadfljasöldkfj
         asldfjöasldkfjöaslksaljd
                    
-            </p>
-	</div>
-
-</content>
+</p>

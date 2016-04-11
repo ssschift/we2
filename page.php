@@ -1,22 +1,28 @@
-
+<html>
  
  <?php include ("head.php"); ?>
  
-<body>
-		
-        <div id="background_div">
-        <img src="" alt="Strand" id="background_img">
-       	</div>
-		
+	<body>	
+       <div id="wrapper">
+ 			<header>
+ 				<?php include ("header.php"); ?>
+ 			</header>
+            
+            <nav>
+				<?php include ("nav.php"); ?>
+  			</nav>
+             
+            <content>
+		 		<?php include ("content.php"); ?>
+            </content> 
+ 				
+			<footer>	
+				<?php include ("footer.php"); ?>
+   			</footer>
+	        
+        </div>
         
-        <div id="wrapper">
- 
- 			<?php include ("header.php"); ?>
- 
-			<?php include ("nav.php"); ?>
-  				
-		 	<?php include ("content.php"); ?>
-              
- 			<?php include ("footer.php"); ?>
-   		</div>
+    </body>
+    
+</html>
     

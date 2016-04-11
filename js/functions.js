@@ -1,12 +1,11 @@
 
-$("#showPic").click(function() {
-	$("#background_img").css("opacity", 1);
-	});
-
-
 /************************************************/
 /* Changes the background after 10 seconds to another picture (just on home)*/
 
+
+
+
+/*********** Scans files ***/
 
 /* Resizes the background accordingly to the browser size */
 
@@ -86,6 +85,14 @@ function changeBackground () {
 	
 	
 	
+	
+	
+/******** Change opacity of background image***
+$("#showPic").click(function() {
+	$("#background_img").css("opacity", 1);
+	});
+
+*/
 
 		/*if (browserWidth > browserHeight) {
 		$("#background_img").css("height", newImgHeight);
