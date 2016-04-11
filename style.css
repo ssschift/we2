@@ -9,7 +9,7 @@ body {
 	}
 
 #wrapper {
-	max-width: 1200px;
+	max-width: 80%;
 	text-align: center;
 	margin: 0 auto; 
 	overflow:hidden;
@@ -33,14 +33,13 @@ nav {
 	margin: 0 auto 10px;
     width: 90%;
 	height: 30px;
+	display: block;
 }
 
 li {
 	padding-left: 10px;}
 
 #nav1 {
-	margin-left: auto;
-	margin-right: auto; 
 	display: block;}
 	
 #nav2 {

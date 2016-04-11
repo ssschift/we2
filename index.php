@@ -6,10 +6,10 @@
        <div id="wrapper">
  			<header>
  				<?php include ("header.php"); ?>
- 			
                     
 				<?php include ("nav.php"); ?>
-  			</header>
+  			
+            </header>
              
             <content>
 		 		<?php include ("content.php"); ?>
