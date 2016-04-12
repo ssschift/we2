@@ -60,9 +60,16 @@ nav div ul li a {
 	margin: 20px auto;}
 	
 #uebersicht img{
-	width: 20%;
 	padding: 10px;
 	float: left;}
+	
+.uebersicht_hoch {
+	height: 200px; 
+	width: 150px;}
+	
+.uebersicht_breit {
+	width: 200px; 
+	height: 150px;}
 
 #background_div {
 	position: absolute; 
@@ -78,7 +85,6 @@ nav div ul li a {
 
 footer {
 	clear: both;
-	position:absolute;
 	bottom:0;
 	width:100%;
 	font-size:10px;
