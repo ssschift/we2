@@ -9,15 +9,19 @@ body {
 	}
 
 #wrapper {
-	max-width: 1200px;
+	max-width: 80%;
 	text-align: center;
 	margin: 0 auto; 
 	overflow:hidden;
 	}
 	
+header {
+	margin: 40px 0 30px 0;
+	height: 100px;}
+		
 	
 h1 {
-	font-size: 6rem;
+	font-size: 7rem;
 	}
 
 a, a:hover, a:visited {
@@ -26,15 +30,19 @@ a, a:hover, a:visited {
 	}
 
 nav {
-	margin-right: 2%;
-	width: 100%}
+	margin: 0 auto 10px;
+    width: 90%;
+	height: 30px;
+	display: block;
+}
 
-div #nav1 {
-	margin-left: auto;
-	margin-right: auto; 
+li {
+	padding-left: 10px;}
+
+#nav1 {
 	display: block;}
 	
-div #nav2 {
+#nav2 {
 	float: right;}	
 	
 li {
@@ -51,6 +59,11 @@ nav div ul li a {
 	height: 80%;
 	margin: 20px auto;}
 	
+#uebersicht img{
+	width: 20%;
+	padding: 10px;
+	float: left;}
+
 #background_div {
 	position: absolute; 
 	z-index:-100;
