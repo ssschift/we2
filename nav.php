@@ -1,15 +1,16 @@
 <nav>
-<div id="nav1">
-    	<ul>
+	<div id="nav1">
+    	<ul >
 			<li><a href="index.php">Atelier</a></li>
 			<li><a href="about.php">On location</a></li>
 			<li><a href="work.php">Landschaft</a></li>
         </ul>
-    </div>
+	</div>
     
-    <div id="nav2">
+	<div id="nav2">
     	<ul>
-			<li><a href="contact.php">About</a></li>
-        </ul>
-</div>
+           	<li><a href="index.php">About</a></li>
+            <li><a href="index.php">Kontakt</a></li>
+		</ul>
+
 </nav>

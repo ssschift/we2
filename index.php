@@ -1,5 +1,3 @@
-<html>
- 
  <?php include ("head.php"); ?> 
  
 	<body>	
@@ -22,6 +20,4 @@
         </div>
         
     </body>
-    
-</html>
     
