@@ -1,3 +1,8 @@
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+
+
 
 /************************************************/
 /* Changes the background after 10 seconds to another picture (just on home)*/
@@ -9,7 +14,7 @@
 
 /* Resizes the background accordingly to the browser size */
 
-$(document).ready(imgSize);
+/*$(document).ready(imgSize);
 $(document).ready(changeBackground);
 
 $(window).resize(imgSize);
@@ -46,7 +51,7 @@ function imgSize (){
 
 
 
-
+*/
 
 
 
@@ -55,17 +60,18 @@ function imgSize (){
 
 /***********************************************************/
 /* Chooses a random picture out of a library to show the visitor until he clicks 'Home' again or chooses to refresh the picture */
-	
+	/*
 function changeBackground () {
 	var pictures = ["img/IMG_2776.JPG", "img/IMG_2786.JPG", 		"img/IMG_3060.JPG"];
 	var index = Math.floor(Math.random()*pictures.length);
 	var background = pictures[index];
 	$("#background_img").attr("src", pictures[index]);
 	};
+*/
+	
+	
 
-	
-	
-	
+
 	
 	
 	

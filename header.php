@@ -1,5 +1,8 @@
 <?php include ("head.php"); ?> 
  
+<?php $fileName = strrchr($_SERVER['SCRIPT_NAME'],'/');
+			 ?>
+ 
  
  <body>	
  	<div id="wrapper">
@@ -18,9 +21,9 @@
             
                 <div id="nav2">
                     <ul >
-                        <li><a href="atelier.php">Atelier</a></li>
-                        <li><a href="indoor.php">Indoor</a></li>
-                        <li><a href="outdoor.php">Outdoor</a></li>
+                        <li><a href="atelier.php" <?php if($fileName == "/atelier.php") echo 'id="aktiv"'; ?>>Atelier</a></li>
+                        <li><a href="indoor.php" <?php if($fileName == "/indoor.php") echo 'id="aktiv"'; ?>>Indoor</a></li>
+                        <li><a href="outdoor.php" <?php if($fileName == "/outdoor.php") echo 'id="aktiv"'; ?>>Outdoor</a></li>
                     </ul>
                 </div>
     
