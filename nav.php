@@ -1,4 +1,3 @@
-	
 <nav>
 	<div id="nav1">
     	<ul>
