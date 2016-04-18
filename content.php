@@ -22,10 +22,10 @@
 				$breite = $size[0]; $hoehe = $size[1];
 			
 				if ($breite > $hoehe) {
-					echo "<img src='.$datei_pfad_img.' alt='' class='uebersicht_breit'>" ;	
+					echo "<div class='box_b'><img src='.$datei_pfad_img.' alt='' class='uebersicht_breit'></div>" ;	
 					}
 				else if ($hoehe > $breite) {
-					echo "<img src='.$datei_pfad_img.' alt='' class='uebersicht_hoch'>";
+					echo "<div class='box_h'><img src='.$datei_pfad_img.' alt='' class='uebersicht_hoch'></div>";
 					}
 				
 				}		

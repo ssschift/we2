@@ -2,12 +2,9 @@
  
 	<body>	
        <div id="wrapper">
- 			<header>
+
  				<?php include ("header.php"); ?>
                     
-				<?php include ("nav.php"); ?>
-  			
-            </header>
              
             <content>
 		 		<?php include ("content.php"); ?>
