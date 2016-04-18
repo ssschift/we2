@@ -18,10 +18,10 @@ function bilder_laden($category){
 				$breite = $size[0]; $hoehe = $size[1];
 			
 				if ($breite > $hoehe) {
-					echo "<div class='box_b'><img src='.$datei_pfad_img.' alt='' class='uebersicht_breit'></div>" ;	
+					echo "<div class='box_b'><img src='.$datei_pfad_img' alt='' class='uebersicht_breit'></div>" ;	
 					}
 				else if ($hoehe > $breite) {
-					echo "<div class='box_h'><img src='.$datei_pfad_img.' alt='' class='uebersicht_hoch'></div>";
+					echo "<div class='box_h'><img src='.$datei_pfad_img' alt='' class='uebersicht_hoch'></div>";
 					}				
 				}		
 			
