@@ -1,16 +1,13 @@
-<html>
- 
  <?php include ("head.php"); ?> 
  
 	<body>	
        <div id="wrapper">
  			<header>
  				<?php include ("header.php"); ?>
- 			</header>
-            
-            <nav>
+                    
 				<?php include ("nav.php"); ?>
-  			</nav>
+  			
+            </header>
              
             <content>
 		 		<?php include ("content.php"); ?>
@@ -23,6 +20,4 @@
         </div>
         
     </body>
-    
-</html>
     
