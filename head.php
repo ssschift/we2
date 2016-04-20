@@ -22,15 +22,6 @@
 <script language="javascript" type="text/javascript" src="js/functions.js"></script>
 
 
-<link rel="stylesheet" href="blueberry/blueberry.css">
-
-
-<script>$(window).load(function() {
-	$('.blueberry').blueberry();
-});
-</script>
-
-
 <?php include ("functions.php"); ?>
 
 </head>

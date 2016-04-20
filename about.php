@@ -1,12 +1,14 @@
 
-<?php include ("head.php"); ?> 
+<?php include ("header.php"); ?> 
  
-
-<?php include ("header.php"); ?>
-	
-
 <content>
-ABOUT
+<br>
+Ich heisse Fabians Onkel und blabalsdfj
+öalskjdfölas<br>
+kjdfölskjdföljndjf
+lökjdödölajflsakdjsaf
+<br>öjdfölkasjdölasödaskdfalkdf
+<br>
 
 
 
