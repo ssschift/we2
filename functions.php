@@ -48,7 +48,9 @@ $picture = $_GET["pic"];
 $alledateien = scandir('img/'.$category); 
 $counter = 0;
 $dir = dirname(__FILE__);
-$datei_pfad = $category.".php";	
+if ($category == ""){
+	$datei_pfad = "index.php";}
+else {$datei_pfad = $category.".php";}
 			
 
 foreach ($alledateien as $datei) {
@@ -76,10 +78,18 @@ foreach ($alledateien as $datei) {
 
 };
 	
-	
+	/*	if ($tempStelle != $stelle){ 		
+		if ($tempStelle < $laenge){
+			$tempStelle +=1;}
+		else {
+			$tempStelle = 0;}	
+	}
+	else {break;}*/
+    
 	
 ?>
-    
+
+
     
  
 
