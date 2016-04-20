@@ -1,6 +1,7 @@
  <?php include ("header.php"); ?>
-            <content>
-            	
+ <content>
+
+<form method="POST" action="http://mmp.mediologie.ch/im2/forms/ausgabe.php">
 <h1>Kontakt</h1>
 	<!-- ANREDE -->
 		<div class="input">
@@ -82,12 +83,10 @@
 	<!-- SUBMIT -->
 		<div class="submit">
 			<input type="submit" value="abschicken" ></div>
-                
-                
-                
-            </content> 
+</form>         
+</content> 
  				
-				<?php include ("footer.php"); ?>
+<?php include ("footer.php"); ?>
 	        
 
     
