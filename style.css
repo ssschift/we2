@@ -48,7 +48,8 @@ a, a:hover, a:visited {
 	padding: 0 40px;}
 	
 #aktiv {
-	font-weight:700;}
+	font-weight:700;
+	border-bottom:1px solid;}
 	
 li {
 	padding-left: 10px;
