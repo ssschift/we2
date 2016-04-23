@@ -152,20 +152,15 @@ footer {
     float:right;
 }
 
-.input {
+.form-group {
+    width: 50%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    padding-top: 0px;
+    
 }
-
-#vorname{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 20px 20px;
-	background-position: 1px 1px;
-	background-repeat: no-repeat;
-}
-
-#vorname:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 20px 20px;
-	background-position: 1px 1px;
-	background-repeat: no-repeat;
-}
-
+   
+#success_message{ display: none;}

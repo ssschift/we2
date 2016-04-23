@@ -136,3 +136,4 @@ $("#showPic").click(function() {
 			$("#background_img").style.height = height;
 			$("#background_img").style.width = width;}
 	*/			
+
