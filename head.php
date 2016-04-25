@@ -19,6 +19,8 @@
 
 
 <link rel="stylesheet" href="style.css">
+<link href="bootstrap-3.3.6/docs/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
+
 <script language="javascript" type="text/javascript" src="js/functions.js"></script>
 
 

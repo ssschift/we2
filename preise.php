@@ -4,7 +4,8 @@
 Gerne geben wir Ihnen auf dieser Seite eine grobe Berechnung der Preise. 
 
 <br><br>
-<p>Für welchen Zweck möchten Sie mich buchen? </p>
+<h2>Zweck</h2>
+	Für welchen Zweck möchten Sie mich buchen? 
 
 <p>Ihre Auswahl: <span id="text"></span></p>
 
@@ -24,7 +25,7 @@ Gerne geben wir Ihnen auf dieser Seite eine grobe Berechnung der Preise.
 <form oninput="numerisch.value=auswertung.value">
 
 <input id="form" type="range" name="auswertung" min="1" max=8><br>
-Erwartete Dauer: <output name="numerisch"></output>Stunden.
+<output name="numerisch"></output> Stunden.
 
 </form></div>
 

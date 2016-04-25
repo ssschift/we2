@@ -102,7 +102,18 @@ ul {
 
 
 
+input[type="range"]{
+	margin: 10px auto;
+	width: 40%;
+}
+
+output {
+	display:inline;
+	font-size: 16px;
+}
+
 /********CAROUSEL***********/
+
 .carousel {
 	width: 70%;
 	margin: 0 auto;
@@ -136,6 +147,8 @@ footer {
 	float:right;
 	width:100px;
 	}
+
+
 /********CONTACT***********/
 
 #form-main {
