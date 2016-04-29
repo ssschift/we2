@@ -1,10 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* Einbindung google fonts */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 body {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
+	font-family: Raleway;
+	font-size: 1.6rem;
+	font-weight:500;
 	background-color: #efefef;
 	}
 
@@ -42,6 +45,7 @@ a, a:hover, a:visited {
 	
 #nav2 ul {
 	width: 98%;
+    text-transform: uppercase;
 	}	
 	
 #nav2 ul li {
@@ -102,7 +106,18 @@ ul {
 
 
 
+input[type="range"]{
+	margin: 10px auto;
+	width: 40%;
+}
+
+output {
+	display:inline;
+	font-size: 16px;
+}
+
 /********CAROUSEL***********/
+
 .carousel {
 	width: 70%;
 	margin: 0 auto;
@@ -136,6 +151,8 @@ footer {
 	float:right;
 	width:100px;
 	}
+
+
 /********CONTACT***********/
 
 #form-main {
@@ -162,6 +179,7 @@ footer {
     padding-top: 0px;
     
 }
+<<<<<<< HEAD
 
 #btn {
   background: #c9c9c9;
@@ -189,3 +207,15 @@ p {
     float: left;
     text-align: left;
 }
+=======
+   
+#success_message{ display: none;}
+
+.logo {
+	width: 25%;
+	height: 25%;
+	float:center;
+    margin-bottom: 30px;
+}
+
+>>>>>>> 16cc36d866d71c460256d1f5069aca7a4e7e62e8

@@ -1,4 +1,9 @@
+<<<<<<< HEAD
  <?php include ("header.php"); ?>   
+=======
+ <?php include ("header.php"); ?>
+
+>>>>>>> 16cc36d866d71c460256d1f5069aca7a4e7e62e8
 	<div id="form-main">
     
 <form id="form-div">
