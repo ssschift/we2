@@ -18,7 +18,7 @@
 		</div>
 		<br>
 
-			  <h1><a href="http://localhost/fotograph">Atelier Lightning </a></h1>
+			  <div><a href="http://localhost/fotograph"><img src="img/L_Atelier_Lightning.svg" alt="Logo Atelier Lightning" class="logo"></a></div>
 
 			<div id="nav2">
 				<ul >
