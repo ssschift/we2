@@ -1,10 +1,6 @@
-<<<<<<< HEAD
- <?php include ("header.php"); ?>   
-=======
- <?php include ("header.php"); ?>
+<?php include ("header.php"); ?> 
 
->>>>>>> 16cc36d866d71c460256d1f5069aca7a4e7e62e8
-	<div id="form-main">
+<div id="form-main">
     
 <form id="form-div">
           <h2>Kontakt</h2>  
@@ -100,7 +96,7 @@ return true;
 }
 </script>
     
-        <br><br>
+<br><br>
     <div id="map-div">
 <p>Adresse: Beispielweg 1,<br> 3000 Beispielstadt<br><br>Anfahrt</p>
 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:300px;width:420px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://www.bonus-casino.biz/'>www.bonus-casino.biz</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=055cd8edca644fa5a608b9d6ce963a82e345c43f'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(46.9167,7.466699999999946),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(46.9167,7.466699999999946)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br><br> Bern<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
@@ -110,4 +106,3 @@ return true;
 </div>
 
 <?php include ("footer.php"); ?>
-	       
