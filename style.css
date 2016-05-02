@@ -64,7 +64,8 @@ a:visited {
 }
 
 .navbar-default {
-    background-image:linear-gradient(to bottom,#efefef 0,#efefef 100%);}
+    background-image:linear-gradient(to bottom,#efefef 0,#efefef 100%);
+    border:none;}
 
 #nav2 ul {
     width: 98%;
