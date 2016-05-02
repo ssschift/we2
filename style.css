@@ -195,27 +195,29 @@ footer {
     width: 100%;
 }
 
-#form-div {
+#contact-div {
     width: 50%;
-    float: left;
+    float:left;
 }
 
 #map-div {
     width: 50%;
-    float: right;
+    float:right;
 }
 
-.form-group {
-    width: 50%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
+#map-center {
+    align-content: center;
+    float: center;
     margin-right: auto;
-    padding: 0px;
-    padding-top: 0px;
+    margin-left: auto;
+} 
+
+#contact-div {
+    width: 50%;
+    float:left;
 }
 
-<<<<<<< HEAD #btn {
+#btn {
     background: #c9c9c9;
     background-image: -webkit-linear-gradient(top, #c9c9c9, #c9c9c9);
     background-image: -moz-linear-gradient(top, #c9c9c9, #c9c9c9);
@@ -237,12 +239,15 @@ footer {
     text-decoration: none;
 }
 
+h4 {
+    text-align: left;
+}
 p {
     float: left;
     text-align: left;
 }
 
-=======#success_message {
+#success_message {
     display: none;
 }
 
@@ -252,5 +257,3 @@ p {
     float: center;
     margin-bottom: 30px;
 }
-
->>>>>>> 16cc36d866d71c460256d1f5069aca7a4e7e62e8
