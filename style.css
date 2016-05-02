@@ -2,7 +2,7 @@
 /* CSS Document */
 
 /* Einbindung google fonts */
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
 
 body {
 	font-family: Raleway;
