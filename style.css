@@ -9,51 +9,53 @@ body {
 	font-size: 1.6rem;
 	font-weight:500;
 	background-color: #efefef;
-	}
+}
 
 #wrapper {
 	max-width: 90%;
 	text-align: center;
 	margin: 0 auto; 
-	}
+}
 	
 header {
 	margin: 20px 0;
 	padding:0 0 2px;
-	height:180%;}
+	height:180%;
+}
 		
-	
 h1 {
 	font-size: 5rem;
 	margin: 0 0 20px;
-	}
+}
 
 a, a:hover, a:visited {
 	color: rgba(0,0,0,1.00);
 	text-decoration: none; 
-	}
+}
 
 #nav1 {
-	float:right;}
+	float:right;
+	display: inline-flex;
+    flex-direction: row
+}
 
 #nav1 ul {
     width: 90%;
 	margin: 0 auto;
-	display:inline-flex;
 }
 
-	
 #nav2 ul {
 	width: 98%;
     text-transform: uppercase;
-	}	
+}	
 	
 #nav2 ul li {
 	padding: 0 40px;}
 	
 #aktiv {
 	font-weight:700;
-	border-bottom:1px solid;}
+	border-bottom:1px solid;
+}
 	
 li {
 	padding-left: 10px;
@@ -61,50 +63,53 @@ li {
 
 
 ul { 
-	list-style: none;} 
+	list-style: none;
+} 
 
 #nav2 ul li a {
 	padding: 6px;
 }
 	
 #nav2 ul li a:hover {
-	border-bottom:1px solid;}	
+	border-bottom:1px solid;
+}	
 	
 #content {
 	width: 80%;
 	height: 80%;
-	margin: 20px auto;}
+	margin: 20px auto;
+}
 	
 #uebersicht {
-	display:table;}	
+	display:table;
+}	
 	
 #uebersicht div {
 	float: left;
 	margin: 2px;
 	overflow: hidden;
-	}	
+}	
 	
 #uebersicht div{
-	}
+}
 	
 #uebersicht img{
 	width: 105%;
 	opacity: 1;
 	transition: opacity 0.5s; 
 	transition: width 0.5s;
-	}
+}
 		
 #uebersicht img:hover{
 	opacity: 0.7;
-	width: 110%;}
-
+	width: 110%;
+}
 
 .box_b,
 .box_h {
 	width: 400px; 
-	height: 250px;}
-
-
+	height: 250px;
+}
 
 input[type="range"]{
 	margin: 10px auto;
@@ -121,10 +126,10 @@ output {
 .carousel {
 	width: 70%;
 	margin: 0 auto;
-	}
+}
 .carousel .gal {
-	cursor: url(img/cursor.png), auto;}
-	
+	cursor: url(img/cursor.png), auto;
+}
 	
 footer {
 	clear: both;
@@ -136,21 +141,22 @@ footer {
 	text-align: center;	
 	font-size:12px;
 	padding:2px;
-	margin-top:10px;}
+	margin-top:10px;
+}
 	
 #container { 
 	width:100%;
-	}
+}
 
 #center {
 	margin:0 auto;
 	width:100px;
-	}
+}
 	
 #right {
 	float:right;
 	width:100px;
-	}
+}
 
 
 /********CONTACT***********/
@@ -176,8 +182,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
-    padding-top: 0px;
-    
+    padding-top: 0px;    
 }
 <<<<<<< HEAD
 
@@ -209,7 +214,9 @@ p {
 }
 =======
    
-#success_message{ display: none;}
+#success_message { 
+    display: none;
+}
 
 .logo {
 	width: 25%;
