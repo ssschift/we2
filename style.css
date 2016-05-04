@@ -11,7 +11,6 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     background-color: #efefef;
-	hallo FABIAAAAN
 }
 
 #wrapper {
@@ -50,22 +49,43 @@ a:visited {
 /*******************NAVIGATION*******************************/
 
 #nav1 {
+    width: 130px;
+    height: 35px;
     float: right;
-    display: inline-flex;
-    flex-direction: row
 }
 
-#nav1 ul {
-    width: 90%;
-    margin: 0 auto;
-}
-
-#nav ul li {
-    margin: 5px;
+#nav-icon {
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin: 3px;
 }
 
 .round {
 
+}
+
+.nav navbar-nav {
+    align-content: center;
+    float:none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav>li{
+    float: none;
+}
+
+li {
+      float: none;
+      display: inline-block;
+    }
+  }
+
+
+.container-fluid {
+    padding: auto;
 }
 
 .navbar-header {
@@ -109,6 +129,10 @@ ul {
 }
 
 #nav2 ul li a:hover {
+    border-bottom: 1px solid;
+}
+
+#nav2 ul li a.link-active {
     border-bottom: 1px solid;
 }
 
@@ -215,49 +239,20 @@ footer {
 }
 
 #map-center {
+    width: 420px;
+    height: auto;
+    margin: 0 auto;
     align-content: center;
-    float: center;
-    margin-right: auto;
-    margin-left: auto;
+    float: none;
 } 
-
-#contact-div {
-    width: 50%;
-    float:left;
-}
-
-#btn {
-    background: #c9c9c9;
-    background-image: -webkit-linear-gradient(top, #c9c9c9, #c9c9c9);
-    background-image: -moz-linear-gradient(top, #c9c9c9, #c9c9c9);
-    background-image: -ms-linear-gradient(top, #c9c9c9, #c9c9c9);
-    background-image: -o-linear-gradient(top, #c9c9c9, #c9c9c9);
-    background-image: linear-gradient(to bottom, #c9c9c9, #c9c9c9);
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 14px;
-    padding: 8px;
-    text-decoration: none;
-}
-
-#btn:hover {
-    background: #d4d4d4;
-    text-decoration: none;
-}
 
 h4 {
     text-align: left;
 }
+
 p {
     float: left;
     text-align: left;
-}
-
-#success_message {
-    display: none;
 }
 
 .logo {
