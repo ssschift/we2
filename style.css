@@ -38,6 +38,14 @@ a:visited {
 }
 
 
+.site-wrapper-inner {
+	background-image: url("img2/050.jpg");
+	background-size: 100% 100%;
+}
+
+#background_img {
+	width: 100%;
+}
 /*******************NAVIGATION*******************************/
 
 #nav1 {

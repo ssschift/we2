@@ -8,9 +8,9 @@
 
 /*********** Scans files ***/
 
-/* Resizes the background accordingly to the browser size */
+/*Resizes the background accordingly to the browser size */
 
-/*$(document).ready(imgSize);
+(document).ready(imgSize);
 $(document).ready(changeBackground);
 
 $(window).resize(imgSize);
@@ -47,7 +47,7 @@ function imgSize (){
 
 
 
-*/
+
 
 
 
