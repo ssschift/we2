@@ -91,8 +91,16 @@ a:visited {
 }
 
 #nav ul li {
+<<<<<<< HEAD
 	margin: 5px;
 	width: 90%;
+=======
+    margin: 5px;
+}
+
+.round {
+
+>>>>>>> b83fc0ca11dc8c185530da6a617e9f474e7be8bd
 }
 
 .navbar-header {
