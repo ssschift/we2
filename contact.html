@@ -24,7 +24,8 @@
 <body>
 	<div id="wrapper">
 		<header>
-    <div id="nav1">
+            
+         <div id="nav1">
                <div id="nav-icon"><a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round"></a></div>
                 <div id="nav-icon"><a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round"></a></div>
                 <div id="nav-icon"><a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round"></a></div>
@@ -70,10 +71,10 @@
 		</header>
 		<content>
 
-			<div id="form-main">
-				<h2>Kontakt</h2>
-				<div id="contact-div">
-
+                        
+    <div class="row">
+  <div class="col-xs-10 col-sm-6 col-md-6">
+	<h2>Kontakt</h2>
 					<!-- Form Name -->
 					<form class="form-horizontal" id="form-horizontal" method="post" action="http://mmp.mediologie.ch/im2/forms/ausgabe.php">
 						<fieldset>
@@ -81,8 +82,8 @@
 
 							<!-- Multiple Radios (inline) -->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="anrede"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="anrede"></label>
+								<div class="col-md-6">
 									<label class="radio-inline" for="anrede-0">
 										<input name="Anrede" id="anrede-0" value="Herr" checked="checked" type="radio"> Herr
 									</label>
@@ -97,24 +98,24 @@
 
 							<!-- Text input-->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="name"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="name"></label>
+								<div class="col-md-6">
 									<input id="name" name="Name" placeholder="Name" class="form-control input-md" required type="text">
 								</div>
 							</div>
 
 							<!-- Text input-->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="vorname"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="vorname"></label>
+								<div class="col-md-6">
 									<input id="vorname" name="Vorname" placeholder="Vorname" class="form-control input-md" required="" type="text">
 								</div>
 							</div>
 
 							<!-- Text input-->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="email"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="email"></label>
+								<div class="col-md-6">
 									<input id="email" name="Email" placeholder="Email" class="form-control input-md" required="" type="email">
 
 								</div>
@@ -122,8 +123,8 @@
 
 							<!-- Text input-->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="strasse"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="strasse"></label>
+								<div class="col-md-6">
 									<input id="strasse" name="Strasse" placeholder="Strasse / Nr." class="form-control input-md" type="text">
 
 								</div>
@@ -131,8 +132,8 @@
 
 							<!-- Text input-->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="plz"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="plz"></label>
+								<div class="col-md-6">
 									<input id="plz" name="PLZ" placeholder="PLZ" class="form-control input-md" type="text">
 
 								</div>
@@ -140,8 +141,8 @@
 
 							<!-- Text input-->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="ort"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="ort"></label>
+								<div class="col-md-6">
 									<input id="ort" name="Ort" placeholder="Ort" class="form-control input-md" type="text">
 
 								</div>
@@ -149,8 +150,8 @@
 
 							<!-- Multiple Checkboxes -->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="brochure"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="brochure"></label>
+								<div class="col-md-6">
 									<div class="checkbox">
 										<label for="brochure-0">
 											<input name="Broschüre" id="brochure-0" value="Ja" type="checkbox"> Senden Sie mir eine Broschüre
@@ -161,16 +162,16 @@
 
 							<!-- Textarea -->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="comment"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="comment"></label>
+								<div class="col-md-6">
 									<textarea class="form-control" id="comment" placeholder="Kommentar" rows="2" name="Kommentar"></textarea>
 								</div>
 							</div>
 
 							<!-- Button (Double) -->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="btn1"></label>
-								<div class="col-md-5">
+								<label class="col-md-3 control-label" for="btn1"></label>
+								<div class="col-md-6">
 									<button id="btn1" name="" class="btn btn-primary" type="submit">Abschicken</button>
 									<button id="btn2" name="btn2" class="btn btn-default" type="reset">Zurücksetzen</button>
 								</div>
@@ -179,12 +180,11 @@
 						</fieldset>
 					</form>
 
-				</div>
-
-				<br>
-				<div id="map-div">
-						<div id="map-center">
-                            <h4>Atelier Lightning</h4>
+    </div>
+        
+  <div class="col-xs-8 col-sm-6 col-md-6">
+      
+        <h4>Atelier Lightning</h4>
 						<p>Beispielweg 12
 							<br>3000 Beispielstadt
 							<br>
@@ -226,14 +226,10 @@
 								}
 								google.maps.event.addDomListener(window, 'load', init_map);
 
-							</script>
-						</div>
-					<div>
-						<br>
-						<br>
-					</div>
-				</div>
-			</div>
+		</script>
+      </div>
+</div>   
+		
 		</content>
 
 		<footer class="footer">
