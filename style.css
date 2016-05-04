@@ -266,3 +266,21 @@ p {
     float: center;
     margin-bottom: 30px;
 }
+
+.portrait_ruedi {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 20px;
+}
+
+.buecher {
+    width: 110%;
+    height: 110%; 
+    margin-bottom: 20px;
+}
+
+.broschueren {
+    width: 110%;
+    height: 110%;
+    margin-bottom: 20px;
+}
