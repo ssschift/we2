@@ -10,21 +10,21 @@
 
 /*Resizes the background accordingly to the browser size */
 
-(document).ready(imgSize);
-$(document).ready(changeBackground);
 
-$(window).resize(imgSize);
-	
-function imgSize (){
+
+
+/*function imgSize (){
 	
 	// get dimensions of the image
 	var imgWidth = $("#background_img").width();
 	var imgHeight = $("#background_img").height();
 	
+	
 	// get the dimensions of the browser 
     var browserWidth  = $(window).width();
     var browserHeight = $(window).height();
-
+	
+	
 	// get sure that the images are not distorted
 	var newImgHeight = browserWidth/1.5;
 	var newImgWidth = browserHeight*1.5;
@@ -47,6 +47,12 @@ function imgSize (){
 
 
 
+$(document).ready(imgSize);
+
+
+$(window).resize(imgSize);
+*/	
+
 
 
 
@@ -55,15 +61,9 @@ function imgSize (){
 
 
 /***********************************************************/
-/* Chooses a random picture out of a library to show the visitor until he clicks 'Home' again or chooses to refresh the picture */
-	/*
-function changeBackground () {
-	var pictures = ["img/IMG_2776.JPG", "img/IMG_2786.JPG", 		"img/IMG_3060.JPG"];
-	var index = Math.floor(Math.random()*pictures.length);
-	var background = pictures[index];
-	$("#background_img").attr("src", pictures[index]);
-	};
-*/
+/* Chooses a random picture out of a library to show the visitor  */
+
+
 	
 	
 
