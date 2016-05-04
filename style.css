@@ -252,31 +252,17 @@ footer {
 
 /********CONTACT***********/
 
-#form-main {
-    width: 100%;
-}
-
-#contact-div {
-    width: 50%;
-    float:left;
-}
-
-#map-div {
-    width: 50%;
-    float:right;
-}
-
-#map-center {
-    width: 420px;
-    height: auto;
-    margin: 0 auto;
-    align-content: center;
-    float: none;
-} 
 
 h4 {
 	text-align: left;
 }
+
+h2{
+    margin-top: 0px !important;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}   
 
 p {
 	float: left;
