@@ -164,26 +164,25 @@ ul {
     border-bottom: 1px solid;
 }
 
-#content {
-	width: 80%;
-	height: 80%;
-	margin: 20px auto;
+/*****************Gallery*****************************/
+
+
+
+#uebersicht{
+    display: inline-block;
+    width: 60%;
+    height: 50%;
+    float: none;
 }
 
-#uebersicht {
-	display: table;
+.img-center {
+    display: inline-block;
+    margin-bottom: 30px;
+    
 }
-
-#uebersicht div {
-	float: left;
-	margin: 2px;
-	overflow: hidden;
-}
-
-#uebersicht div {}
 
 #uebersicht img {
-	width: 105%;
+	width: 100 %;
 	opacity: 1;
 	transition: opacity 0.5s;
 	transition: width 0.5s;
