@@ -44,7 +44,7 @@
 							     <img src="img/L_Atelier_Lightning.svg" alt="Logo Atelier Lightning" class="logo">
                 
 							<ul class="nav masthead-nav">
-								<li class="active" id="enter"><a href="#">Enter</a></li>
+								<li class="active" id="enter"><a href="index.html">Enter</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -62,7 +62,6 @@
 	<script>
 		$(document).ready(changeBackground());
 
-
 		function changeBackground() {
 			var pictures = ["img2/start/1339.jpg", "img2/start/1793.jpg", "img2/start/2013_04_24_smdk_51.jpg", "img2/start/2013_07_09_Suhr_746.jpg", "img2/start/2015_11_30_13_B.jpg", "img2/start/2015_243.jpg"];
 			var index = Math.floor(Math.random() * pictures.length);
@@ -74,15 +73,10 @@
 
 		$("#enter").hover(function(){
 			var wrapper = $(".site-wrapper-inner");
-			wrapper.css('opacity', 0.7);
-			
-			
+			wrapper.css('opacity', 0.7);	
 		});	
 			
-			
-			
-			
-		};
+
 
 	</script>
 
