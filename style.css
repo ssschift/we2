@@ -268,7 +268,7 @@ h2{
     margin-right: 0px;
 }   
 
-p {
+.address {
 	float: left;
 	text-align: left;
 }
@@ -326,5 +326,20 @@ p {
 
 .text_about {
     float: left;
+    text-align: left;
     width: 90%;
+}
+
+.text_centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 40em
+}
+
+#pic_documentation {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+    display: block;
 }
