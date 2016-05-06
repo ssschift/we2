@@ -26,19 +26,44 @@
 <body>
     <div id="wrapper">
         <header>
-            <div id="nav1">
-                <ul>
-                    <li>
-                        <a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round"></a>
-                    </li>
-                    <li>
-                        <a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round"></a>
-                    </li>
-                    <li>
-                        <a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round"></a>
-                    </li>
-                </ul>
-            </div>
+			<div id="nav1">
+				<figure class="figure">
+					<div id="nav-icon">
+						<a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round figure-img img-fluid img-rounded"></a>
+						<figcaption class="figure-caption">Teilen</figcaption>
+					</div>
+				</figure>
+
+
+
+				<figure class="figure">
+					<div id="nav-icon">
+						<a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round figure-img img-fluid img-rounded"></a>
+						<figcaption class="figure-caption">About</figcaption>
+					</div>
+				</figure>
+
+				<figure class="figure">
+					<div id="nav-icon">
+						<a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round figure-img img-fluid img-rounded"></a>
+						<figcaption class="figure-caption">Kontakt</figcaption>
+					</div>
+				</figure>
+				<script>
+					$(".figure-caption").hide();
+					
+					$(document).ready(function() {
+					$(".figure").hover(function() {
+						$(this).find(".figure-caption").fadeIn(200);},
+							function() {
+								$(this).find('.figure-caption').fadeOut(50);
+							});
+
+					});
+
+				</script>
+
+			</div>
 
 
             <br>
@@ -69,7 +94,7 @@
                                 <li><a class="link-active" href="atelier.html">ATELIER</a></li>
                                 <li><a href="indoor.html">INDOOR</a></li>
                                 <li><a href="outdoor.html">OUTDOOR</a></li>
-
+                            </ul>
                         </div>
                         <!-- /.navbar-collapse -->
                     </div>
