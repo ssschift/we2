@@ -334,12 +334,20 @@ h2{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    width: 40em
+    width: 38%;
 }
 
 #pic_documentation {
     margin-left: auto;
     margin-right: auto;
-    width: 40em;
+    width: 32%;
     display: block;
+}
+
+.headline_documentation {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 38%;
+    color: #283982;
 }
