@@ -79,7 +79,11 @@
         </header>
         <content>
             <div class="about_left">
-                <img src="img/Portr_Ruedi_480.jpg" alt="Portrait Ruedi" class="portrait_ruedi">
+                <picture>
+                    <source media="(min-width: 760px)" srcset="img/Portr_Ruedi_480.jpg" class="portrait_ruedi">
+                    <source media="(max-width: 760px)" srcset="img/Portr_Ruedi_320.jpg" class="portrait_ruedi">
+                    <img src="img/Portr_Ruedi_480.jpg" alt="Portrait Ruedi" class="portrait_ruedi">
+                </picture>
             </div>
             <div class="about_right">
                 <p class="text_about">

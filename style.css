@@ -14,7 +14,6 @@ body {
 }
 
 #wrapper {
-
 	text-align: center;
 	margin: 0 auto;
 }
@@ -311,17 +310,43 @@ h2{
     width: 60%;
     padding-right: 30%;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .portrait_ruedi {
     float: right;
-    width: 20%;
+    width: 150px;
 }
 
 .text_about {
     float: left;
     text-align: left;
     width: 90%;
+}
+
+/* Tablets und kleiner */
+@media only screen and (max-width: 760px) {
+	.about_right { 
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw; 
+        float: none;
+    }
+    .about_left {
+        float: none;
+        width: 100vw;
+        margin-bottom: 5vw;
+    }
+    .portrait_ruedi {
+        float: none;
+        width: 30vw;
+    }
+    .text_about {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 50vw;
+    }
 }
 
 
