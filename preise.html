@@ -101,7 +101,6 @@
         </header>
 
         <content>
-
             <div class="row">
                 <div class="col-sm-3 col-md-3"></div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
@@ -114,6 +113,7 @@
                         <div class="col-sm-3 col-lg-3"></div>
                         <div class="col-sm-6 col-lg-3">
 
+                              <!-- Zweck der Portraitfotografie. value = Preis -->
                             <select id="firstSelect">
                                 <option value="none">Bitte wählen Sie</option>
                                 <option value=30>Hochzeit</option>
@@ -128,8 +128,8 @@
                     </div>
                     <br>
 
+                      <!-- Wird erst angezeigt, sobald eine Auswahl getroffen wurde -->
                     <p class="verstecken">Ihre Auswahl: <span id="text"></span></p>
-
                     <br>
                     <br>
 
@@ -137,41 +137,47 @@
                         <div class="col-sm-3 col-lg-3"></div>
                         <div class="col-sm-6 col-lg-6">
 
-
-
+                           <!-- Auswahl, wie lange Fotografie dauern soll. Wird erst angezeigt, nachdem oben eine Auswahl getroffen wurde -->
                             <div class="verstecken">
                                 <p>Wie lange soll das dauern?</p>
                                 <br>
                                 <input id="time-select" data-slider-id="time-select-slider" type="text" name="slider" data-provide="slider" data-slider-min="1" data-slider-max="10" data-slider-step="1" data-slider-value="8">
-
                             </div>
-
                         </div>
                         <div class="col-sm-3 col-lg-3"></div>
                     </div>
                     <br>
+                    <!-- Zeigt den berechneten Tarif an. Zweck * Anzahl Stunden -->
                     <p id="tarif"></p>
                     <br>
                 </div>
                 <div class="col-sm-3 col-md-3"></div>
             </div>
         </content>
+        
+        
         <script>
+            // Versteckt die p's mit der Klasse .verstecken. 
             $(".verstecken").hide();
-
+            
+            // Wenn Zweck gewählt wurde, wird angezeigt, welche Auswahl man gewählt hat. Die nächsten Schritte werden eingeblendet, .verstecken wird also sichtbar. 
             $("#firstSelect").change(function() {
+                // Holt den ausgewählten Zweck. 
                 var auswahl = $("#firstSelect option:selected").text();
                 var auswahlValue = $("#firstSelect option:selected").val();
 
+                // Falls nicht gleich "none", wird er angezeigt. 
                 if (auswahlValue != "none") {
                     $("#text").text(auswahl);
                     $(".verstecken").show();
                 }
             });
 
+            // Initiiert das Bootstrap-Plugin "Slider"
             var mySlider = $("input.slider").slider();
             $('#time-select').slider({
                 formatter: function(value) {
+                    // Zeigt beim Sliden den ausgewählten Wert an
                     if (value == 1) {
                         return "" + value + " Stunde";
                     } else {
@@ -180,7 +186,7 @@
                 }
             });
 
-
+            // Zeigt den Tarif an, der errechnet wird, wenn man eine Zeit ausgewählt hat. Zweck * Tarif. Wechselt auch, wenn Zweck geändert wird. 
             $("#time-select").change(function() {
                 var auswahlZweck = $("#firstSelect option:selected").val();
                 var auswahlZeit = $("#time-select").val();

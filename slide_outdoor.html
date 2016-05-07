@@ -2,145 +2,154 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Atelier Lightning </title>
+    <meta charset="utf-8">
+    <title>Atelier Lightning </title>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
 
-	<link href="bootstrap-3.3.6/docs/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<script language="javascript" type="text/javascript" src="js/functions.js"></script>
+    <link href="bootstrap-3.3.6/docs/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript" src="js/functions.js"></script>
 </head>
 
 <body>
-	<div id="wrapper">
-		<header>
-			<div id="nav1">
-				<div id="nav-icon">
-					<a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round"></a>
-				</div>
-				<div id="nav-icon">
-					<a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round"></a>
-				</div>
-				<div id="nav-icon">
-					<a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round"></a>
-				</div>
-			</div>
-			<br>
+    <div id="wrapper">
+        <header>
+            <div id="nav1">
+                <div id="nav-icon">
+                    <a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round"></a>
+                </div>
+                <div id="nav-icon">
+                    <a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round"></a>
+                </div>
+                <div id="nav-icon">
+                    <a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round"></a>
+                </div>
+            </div>
+            <br>
 
-			<div>
-				<a href="index.html">
-					<img src="img/L_Atelier_Lightning.svg" alt="Logo Atelier Lightning" class="logo">
-				</a>
-			</div>
+            <div>
+                <a href="index.html">
+                    <img src="img/L_Atelier_Lightning.svg" alt="Logo Atelier Lightning" class="logo">
+                </a>
+            </div>
 
-			<div id="nav2">
-
-
-
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li><a href="atelier.html">ATELIER</a></li>
-								<li><a href="indoor.html">INDOOR</a></li>
-								<li><a href="outdoor.html">OUTDOOR</a></li>
-							</ul>
-
-						</div>
-						<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container-fluid -->
-				</nav>
-			</div>
-		</header>
-		<content>
-			<div id="myCarousel" class="carousel slide">
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					
-					<script>
-						var pathname = window.location.href;
-						var pathname_seperate = pathname.split("name=");
-						var filename = pathname_seperate[1];
-						var collection = ["314_Poster", "1793", "2013_07_09_Suhr_746", "9775", "Clientis_877", "Hochuli_091"];
-						var index = collection.indexOf(filename);
-
-						var counter = 0;
-
-						while (counter <= (collection.length - 1)) {
-							if (counter == 0) {
-								var text_active = "<div class='item active'><a href='index.html' class='gal'><img src='img/outdoor/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
-								counter += 1;
-							} else {
-								filename = collection[index];
-								var text_active = "<div class='item'><a href='index.html' class='gal'><img src='img/outdoor/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
-								counter += 1;
-							}
-
-							if (index == collection.length - 1) {
-								index = 0;
-							} else {
-								index += 1;
-							}
-
-							$(".carousel-inner").append(text_active);
-						};
-
-					</script>
+            <div id="nav2">
 
 
-				</div>
 
-				<!-- Left and right controls -->
-				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
 
-			<br>
-			<br>
+                        </div>
 
-		</content>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="atelier.html">ATELIER</a></li>
+                                <li><a href="indoor.html">INDOOR</a></li>
+                                <li><a href="outdoor.html">OUTDOOR</a></li>
+                            </ul>
 
-		<footer class="footer">
-			<div class="container ">
-				<p class="text-muted "> 2016 Atelier Lightning
-					<br> Link zu unserer Dokumentation
-					<br> </p>
-			</div>
-		</footer>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </header>
+        <content>
+            <!-- Startet Bootstrap Carousel Div -->
+            <div id="myCarousel" class="carousel slide">
 
-	</div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Liest URL aus, filtert Variable heraus, sucht Variable in Array aus verfügbaren Bildern, und startet dann mit dem angeklickten Bild -->
+                    <script>
+                        // Filtert Variable aus URL heraus und speichert sie in "filename"
+                        var pathname = window.location.href;
+                        var pathname_seperate = pathname.split("name=");
+                        var filename = pathname_seperate[1];
+                        // Sucht Variable im Array "collection" und speichert ihren Index
+                        var collection = ["314_Poster", "1793", "2013_07_09_Suhr_746", "9775", "Clientis_877", "Hochuli_091"];
+                        var index = collection.indexOf(filename);
+
+                        //Counter, damit richtige Anzahl der Bilder geladen werden
+                        var counter = 0;
+
+                        // Solange Counter noch nicht grösser als Anzahl Elemente in "collections", erstelle Div-Tags, die dann als Slider-Elemente angezeigt werden
+                        while (counter <= (collection.length - 1)) {
+                            //Wenn Counter == 0 ist es das erste Element und wird mit "item active" versehen
+                            if (counter == 0) {
+                                var text_active = "<div class='item active'><a href='index.html' class='gal'><img src='img/outdoor/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
+                                counter += 1;
+                                //Wenn Counter !== 0, sind es nachfolgende Elemente und werden als nächste Bilder dem Slider  hinzugefügt
+                            } else {
+                                filename = collection[index];
+                                var text_active = "<div class='item'><a href='index.html' class='gal'><img src='img/outdoor/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
+                                counter += 1;
+                            }
+
+                            // Vergewissert, dass auch alle Bilder geladen werden, wenn das Bild mit Index 3 als erstes geladen wird. Sobald am Ende des Arrays angelangt, beginnt er von vorne, bis "counter" die While-Schleife abbricht. 
+                            if (index == collection.length - 1) {
+                                index = 0;
+                            } else {
+                                index += 1;
+                            }
+
+                            $(".carousel-inner").append(text_active);
+                        };
+
+                    </script>
+
+
+                </div>
+
+                <!-- Links und Rechts Symbole -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <br>
+            <br>
+
+        </content>
+
+        <footer class="footer">
+            <div class="container ">
+                <p class="text-muted "> 2016 Atelier Lightning
+                    <br> Link zu unserer Dokumentation
+                    <br> </p>
+            </div>
+        </footer>
+
+    </div>
 </body>
 
 

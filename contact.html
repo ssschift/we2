@@ -7,77 +7,80 @@
 
 
     <!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-	<link href="bootstrap-3.3.6/docs/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/bootstrap-slider.min.css">
-	<script language="javascript" type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+    <link href="bootstrap-3.3.6/docs/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+    <script language="javascript" type="text/javascript" src="js/bootstrap-slider.min.js"></script>
 
+
+    <style>
+        input:required:valid {
+            background-color: none;
+            border-color: green;
+        }
         
-<style>
+        body {
+            clear: both
+        }
 
-  input:required:valid {
-    background-color:none;
-    border-color: green;
-  }    
- 
-    body {clear: both}
     </style>
-    
+
 </head>
 
 <body>
     <div id="wrapper">
         <header>
 
-			<div id="nav1">
-				<figure class="figure">
-					<div id="nav-icon">
-						<a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round figure-img img-fluid img-rounded"></a>
-						<figcaption class="figure-caption">Teilen</figcaption>
-					</div>
-				</figure>
+            <div id="nav1">
+                <figure class="figure">
+                    <div id="nav-icon">
+                        <a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round figure-img img-fluid img-rounded"></a>
+                        <figcaption class="figure-caption">Teilen</figcaption>
+                    </div>
+                </figure>
 
 
 
-				<figure class="figure">
-					<div id="nav-icon">
-						<a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round figure-img img-fluid img-rounded"></a>
-						<figcaption class="figure-caption">About</figcaption>
-					</div>
-				</figure>
+                <figure class="figure">
+                    <div id="nav-icon">
+                        <a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round figure-img img-fluid img-rounded"></a>
+                        <figcaption class="figure-caption">About</figcaption>
+                    </div>
+                </figure>
 
-				<figure class="figure">
-					<div id="nav-icon">
-						<a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round figure-img img-fluid img-rounded"></a>
-						<figcaption class="figure-caption">Kontakt</figcaption>
-					</div>
-				</figure>
-				<script>
-					$(".figure-caption").hide();
-					
-					$(document).ready(function() {
-					$(".figure").hover(function() {
-						$(this).find(".figure-caption").fadeIn(200);},
-							function() {
-								$(this).find('.figure-caption').fadeOut(50);
-							});
+                <figure class="figure">
+                    <div id="nav-icon">
+                        <a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round figure-img img-fluid img-rounded"></a>
+                        <figcaption class="figure-caption">Kontakt</figcaption>
+                    </div>
+                </figure>
+                <script>
+                    $(".figure-caption").hide();
 
-					});
+                    $(document).ready(function() {
+                        $(".figure").hover(function() {
+                                $(this).find(".figure-caption").fadeIn(200);
+                            },
+                            function() {
+                                $(this).find('.figure-caption').fadeOut(50);
+                            });
 
-				</script>
+                    });
 
-			</div> 
+                </script>
+
+            </div>
 
             <br>
 
@@ -121,13 +124,12 @@
             <div class="row">
                 <div class="col-xs-10 col-sm-6 col-md-6">
                     <h2>Kontakt</h2>
-                    <h5>*Diese Felder sind obligatorisch</h5>
+                    <h5>* Diese Felder sind obligatorisch</h5>
                     <!-- Form Name -->
                     <form name="contact-form" class="form-horizontal" id="form-horizontal" onsubmit="return validateForm()" method="post" action="http://mmp.mediologie.ch/im2/forms/ausgabe.php">
                         <fieldset>
-                
 
-                            <!-- Multiple Radios (inline) -->
+                            <!-- Anrede: Multiple Radios (inline) -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="anrede"></label>
                                 <div class="col-md-6">
@@ -143,7 +145,7 @@
                                 </div>
                             </div>
 
-                            <!-- Text input-->
+                            <!-- Name: Text input-->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="name"></label>
                                 <div class="col-md-6">
@@ -151,7 +153,7 @@
                                 </div>
                             </div>
 
-                            <!-- Text input-->
+                            <!-- Vorname: Text input-->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="vorname"></label>
                                 <div class="col-md-6">
@@ -159,16 +161,16 @@
                                 </div>
                             </div>
 
-                            <!-- Text input-->
+                            <!-- E-Mail: Text input-->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="email"></label>
                                 <div class="col-md-6">
-                                    <input id="email" name="Email" placeholder="Email*" class="form-control input-md" value="" required aria-required="true" type="email" pattern="[^ @]+@[^ @]+.[a-z]+"  oninvalid="this.setCustomValidity('Bitte geben Sie eine gültige Email-Adresse ein.')" oninput="setCustomValidity('')">
+                                    <input id="email" name="Email" placeholder="Email*" class="form-control input-md" value="" required aria-required="true" type="email" pattern="[^ @]+@[^ @]+.[a-z]+" oninvalid="this.setCustomValidity('Bitte geben Sie eine gültige Email-Adresse ein.')" oninput="setCustomValidity('')">
 
                                 </div>
                             </div>
 
-                            <!-- Text input-->
+                            <!-- Strasse: Text input-->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="strasse"></label>
                                 <div class="col-md-6">
@@ -177,7 +179,7 @@
                                 </div>
                             </div>
 
-                            <!-- Text input-->
+                            <!-- PLZ: Text input-->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="plz"></label>
                                 <div class="col-md-6">
@@ -186,7 +188,7 @@
                                 </div>
                             </div>
 
-                            <!-- Text input-->
+                            <!-- Ort: Text input-->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="ort"></label>
                                 <div class="col-md-6">
@@ -195,7 +197,7 @@
                                 </div>
                             </div>
 
-                            <!-- Multiple Checkboxes -->
+                            <!-- Broschüre: Multiple Checkboxes -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="brochure"></label>
                                 <div class="col-md-6">
@@ -207,7 +209,7 @@
                                 </div>
                             </div>
 
-                            <!-- Textarea -->
+                            <!-- Kommentar: Textarea -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="comment"></label>
                                 <div class="col-md-6">
@@ -215,7 +217,7 @@
                                 </div>
                             </div>
 
-                            <!-- Button (Double) -->
+                            <!-- Abschicken: Button (Double) -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="btn1"></label>
                                 <div class="col-md-6">
@@ -226,11 +228,11 @@
                             <br>
                         </fieldset>
                     </form>
-                    
-     </div>
-
-                <div class="col-xs-8 col-sm-6 col-md-6">
-
+                </div>
+                <!-- /column -->
+                
+                <!-- Adresse -->
+                    <div class="col-xs-8 col-sm-6 col-md-6">
                     <h4>Atelier Lightning</h4>
                     <p class="address">Risigasse 5
                         <br>5742 Kölliken
@@ -240,6 +242,8 @@
                     <br>
                     <br>
                     <br>
+                    
+                    <!-- Fügt Karte ein -->
                     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
                     <div style="overflow:hidden;height:300px;width:420px;">
                         <div id="gmap_canvas" style="height:400px;width:520px;"></div>
@@ -250,12 +254,13 @@
                             }
 
                         </style>
+                        
                         <a class="google-map-code" href="http://www.pureblack.de/google-maps/" id="get-map-data">google maps</a></div>
                     <script type="text/javascript">
                         function init_map() {
                             var myOptions = {
                                 zoom: 14,
-                                center: new google.maps.LatLng(47.3395824,8.027588400000013),
+                                center: new google.maps.LatLng(47.3395824, 8.027588400000013),
                                 mapTypeId: google.maps.MapTypeId.ROADMAP
                             };
                             map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
@@ -264,7 +269,7 @@
                                 position: new google.maps.LatLng(47.3395824, 8.027588400000013)
                             });
                             infowindow = new google.maps.InfoWindow({
-                                content:"<b>Atelier Lightning</b><br/>Risigasse 5<br/>5742 K&ouml;lliken"
+                                content: "<b>Atelier Lightning</b><br/>Risigasse 5<br/>5742 K&ouml;lliken"
                             });
                             google.maps.event.addListener(marker, "click", function() {
                                 infowindow.open(map, marker);
@@ -279,14 +284,14 @@
 
         </content>
 
-		<footer class="footer">
-			<div class="container ">
-				<p class="text-muted "> 2016 Atelier Lightning
-					<br><a href="atelier.html">Dokumentation</a>
-					<br> </p>
-			</div>
-		</footer>
-        
+        <footer class="footer">
+            <div class="container ">
+                <p class="text-muted "> 2016 Atelier Lightning
+                    <br><a href="atelier.html">Dokumentation</a>
+                    <br> </p>
+            </div>
+        </footer>
+
     </div>
 </body>
 
