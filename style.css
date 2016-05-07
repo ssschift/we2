@@ -7,27 +7,26 @@
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:500);
 body {
-	font-family: Raleway, Arial, sans-serif;
-	font-size: 1.6rem;
-	font-weight: 500;
-	background-color: #efefef;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: #efefef;
 }
 
 #wrapper {
-
-	text-align: center;
-	margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
 }
 
 header {
-	margin: 20px 0;
-	padding: 0 0 2px;
-	height: 180%;
+    margin: 20px 0 0 40px;
+    padding: 0 0 2px;
+    height: 180%;
 }
 
 h1 {
-	font-size: 5rem;
-	margin: 0 0 20px;
+    font-size: 5rem;
+    margin: 0 0 20px;
 }
 
 .logo {
@@ -37,63 +36,42 @@ h1 {
     z-index: 100;
 }
 
-@media screen and (min-width: 960px) {
-    .logo {
-        width: 25%;
-    }
-}
-@media screen and (max-width: 960px) {
-    .logo {
-        width: 40%;
-    }
-}
-@media screen and (max-width: 640px) {
-    .logo {
-        width: 60%;
-    }
-}
+
 
 a,
 a:hover,
 a:visited {
-	color: rgba(0, 0, 0, 1.00);
-	text-decoration: none;
+    color: rgba(0, 0, 0, 1.00);
+    text-decoration: none;
 }
 
 
 /*****************Enter*****************************/
 
 .site-wrapper {
-	background-image: url("img2/027.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+    background-image: url("img2/027.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.background-color {
-	background-color: lightgrey;
-	opacity: 1.0;
-	transition: opacity 1s;
-
-	-khtml-opacity: .50;
-	-moz-opacity: .50;
-	-ms-filter: "alpha(opacity=50)";
-	filter: alpha(opacity=50);
-	filter: progid: DXImageTransform.Microsoft.Alpha(opacity=0.5);
-	opacity: .50;
-}
-
-.inner img.logo{
-	width: 40%;
+.inner img.logo {
+    width: 40%;
 }
 
 .masthead-nav {
-	float:none;
+    float: none;
+    margin-top: 25%;
 }
 
 .masthead-nav li a {
-	border:0px;
-	font-size: 1rem;
-	font-family: Raleway;
+    border: 0px;
+    font-size: 1.6rem;
+    font-family: Raleway;
+    transition: 1.5s font-size ease;
+}
+
+.masthead-nav li a:hover {
+    font-size: 6rem;
 }
 
 
@@ -103,6 +81,7 @@ a:visited {
     width: 130px;
     height: 35px;
     float: right;
+    margin-right: 40px
 }
 
 #nav-icon {
@@ -114,138 +93,139 @@ a:visited {
 
 .nav navbar-nav {
     align-content: center;
-    float:none;
+    float: none;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.navbar-nav>li{
+.navbar-nav>li {
     float: none;
 }
 
 li {
-      float: none;
-      display: inline-block;
-    }
+    float: none;
+    display: inline-block;
+}
 
 .navbar-header {
-	background-color: #efefef;
+    background-color: #efefef;
 }
 
 .navbar-default {
-	background-image: linear-gradient(to bottom, #efefef 0, #efefef 100%);
-	border: none;
+    background-image: linear-gradient(to bottom, #efefef 0, #efefef 100%);
+    border: none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
 }
 
 #nav2 ul {
-	width: 98%;
-	text-transform: uppercase;
+    width: 98%;
+    text-transform: uppercase;
 }
 
 #nav2 ul li {
-	padding: 0 40px;
-	display: inline-flex;
+    padding: 0 40px;
+    display: inline-flex;
 }
 
 .navbar-nav > li {
-	float: none !important;
+    float: none !important;
 }
 
 #aktiv {
-	font-weight: 700;
-	border-bottom: 1px solid;
+    font-weight: 700;
+    border-bottom: 1px solid;
 }
 
 li {
-	padding-left: 10px;
-	display: inline;
+    padding-left: 10px;
+    display: inline;
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 #nav2 ul li a {
-	padding: 6px;
+    padding: 6px;
 }
 
 #nav2 ul li a:hover {
-	border-bottom: 1px solid;
+    border-bottom: 1px solid;
 }
 
 #nav2 ul li a.link-active {
     border-bottom: 1px solid;
 }
 
+
 /*****************Gallery*****************************/
 
-
-
-#uebersicht{
+#uebersicht {
     display: inline-block;
     width: 60%;
     height: 50%;
     float: none;
 }
 
+#uebersicht img {
+    width: 100 %;
+    opacity: 1;
+    transition: opacity 0.5s;
+-webkit-box-shadow: 4px 4px 9px -2px rgba(199,199,199,0.98);
+-moz-box-shadow: 4px 4px 9px -2px rgba(199,199,199,0.98);
+box-shadow: 4px 4px 9px -2px rgba(199,199,199,0.98);
+}
+
 .img-center {
     display: inline-block;
     margin-bottom: 30px;
-    
 }
 
 #uebersicht img {
-	width: 100 %;
-	opacity: 1;
-	transition: opacity 0.5s;
-	transition: width 0.5s;
+    width:100%;
 }
 
 #uebersicht img:hover {
-	opacity: 0.7;
-	width: 110%;
+    opacity: 0.7;
 }
 
-.box_b,
-.box_h {
-	width: 400px;
-	height: 250px;
+.thumbnail {
+    background-color: #efefef;
+    border: none;
 }
 
-input[type="range"] {
-	margin: 10px auto;
-	width: 40%;
+.img-thumbnail,
+.thumbnail {
+    webkit-box-shadow: none;
+    box-shadow: none;
 }
 
-output {
-	display: inline;
-	font-size: 16px;
-}
 
 
 /********CAROUSEL***********/
 
 .carousel {
-	width: 70%;
-	margin: 0 auto;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .carousel .gal {
-	cursor: url(img/cursor.png), auto;
+    cursor: url(img/cursor2.png), auto;
 }
 
 .footer {
-	clear: both;
-	bottom: 0;
-	width: 100%;
-	font-size: 10px;
-	border-top: 1px solid;
-	font-size: 12px;
-	padding: 2px;
-	margin-top: 10px;
+    clear: both;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    border-top: 1px solid;
+    font-size: 12px;
+    padding: 2px;
+    margin-top: 10px;
     background-color: #efefef;
-    color: #575756 !important; 
+    color: #575756 !important;
 }
 
 #footer-text {
@@ -254,42 +234,40 @@ output {
 }
 
 #container {
-	width: 100%;
+    width: 100%;
 }
 
 #center {
-	margin: 0 auto;
-	width: 100px;
+    margin: 0 auto;
+    width: 100px;
 }
 
 #right {
-	float: right;
-	width: 100px;
+    float: right;
+    width: 100px;
 }
 
 
 /********CONTACT***********/
 
-
 h4 {
-	text-align: left;
+    text-align: left;
 }
 
-h2{
+h2 {
     margin-top: 0px !important;
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-}   
+}
 
 .address {
-	float: left;
-	text-align: left;
+    float: left;
+    text-align: left;
 }
 
 
 /********ABOUT***********/
-
 
 .about_left {
     float: left;
@@ -318,7 +296,6 @@ h2{
 
 /********DOCUMENTATION***********/
 
-
 .text_centered {
     margin-left: auto;
     margin-right: auto;
@@ -340,3 +317,30 @@ h2{
     width: 38%;
     color: #283982;
 }
+
+
+
+/******** Media Queries *********/
+
+@media screen and (min-width: 960px) {
+    .logo {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .logo {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .logo {
+        width: 60%;
+    }
+}
+
+
+
+
+
