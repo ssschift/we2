@@ -36,22 +36,6 @@ h1 {
     z-index: 100;
 }
 
-@media screen and (min-width: 960px) {
-    .logo {
-        width: 25%;
-    }
-}
-@media screen and (max-width: 960px) {
-    .logo {
-        width: 40%;
-    }
-}
-@media screen and (max-width: 640px) {
-    .logo {
-        width: 60%;
-    }
-}
-
 a,
 a:hover,
 a:visited {
@@ -68,31 +52,25 @@ a:visited {
 	background-repeat: no-repeat;
 }
 
-.background-color {
-	background-color: lightgrey;
-	opacity: 1.0;
-	transition: opacity 1s;
-
-	-khtml-opacity: .50;
-	-moz-opacity: .50;
-	-ms-filter: "alpha(opacity=50)";
-	filter: alpha(opacity=50);
-	filter: progid: DXImageTransform.Microsoft.Alpha(opacity=0.5);
-	opacity: .50;
-}
 
 .inner img.logo{
 	width: 40%;
 }
 
 .masthead-nav {
+    margin-top:25%;
 	float:none;
 }
 
 .masthead-nav li a {
 	border:0px;
-	font-size: 1rem;
+	font-size: 2rem;
 	font-family: Raleway;
+    transition: 1.5s font-size;
+}
+
+.masthead-nav li a:hover {
+    font-size:6rem
 }
 
 
@@ -201,6 +179,8 @@ figcaption {
     margin-bottom: 30px;
     
 }
+
+
 
 #uebersicht img {
 	width: 100 %;
@@ -385,4 +365,21 @@ h2{
     text-align: left;
     width: 38%;
     color: #283982;
+}
+
+/**************** Media Queries *****************/
+@media screen and (min-width: 960px) {
+    .logo {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 960px) {
+    .logo {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .logo {
+        width: 60%;
+    }
 }

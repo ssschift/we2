@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>Atelier Lightning </title>
 
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -22,36 +21,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap-slider.min.css">
     <script language="javascript" type="text/javascript" src="js/bootstrap-slider.min.js"></script>
-
-
-    <style>
-        input:required:valid {
-            background-color: none;
-            border-color: green;
-        }
-        
-        body {
-            clear: both
-        }
-
-    </style>
-
 </head>
 
 <body>
     <div id="wrapper">
         <header>
-
+            <!-- Logo Navigation -->
             <div id="nav1">
+                <!-- Preise -->
                 <figure class="figure">
                     <div id="nav-icon">
-                        <a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round figure-img img-fluid img-rounded"></a>
-                        <figcaption class="figure-caption">Teilen</figcaption>
+                        <a href="preise.html"><img src="img/icons/prices.svg" alt="Logo Preise" class="round figure-img img-fluid img-rounded"></a>
+                        <figcaption class="figure-caption">Preise</figcaption>
                     </div>
                 </figure>
 
-
-
+                <!-- About -->
                 <figure class="figure">
                     <div id="nav-icon">
                         <a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round figure-img img-fluid img-rounded"></a>
@@ -59,12 +44,16 @@
                     </div>
                 </figure>
 
+                <!--Kontakt  -->
                 <figure class="figure">
                     <div id="nav-icon">
                         <a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round figure-img img-fluid img-rounded"></a>
                         <figcaption class="figure-caption">Kontakt</figcaption>
                     </div>
                 </figure>
+
+
+                <!-- Versteckt Logos beim Start und blendet sie dann beim Hovern ein. -->
                 <script>
                     $(".figure-caption").hide();
 
@@ -75,21 +64,22 @@
                             function() {
                                 $(this).find('.figure-caption').fadeOut(50);
                             });
-
                     });
 
                 </script>
 
             </div>
-
+            <!-- /#nav1 -->
             <br>
-
+            <!-- Brand -->
             <div>
-                <a href="index.html">
+                <a href="home.html">
                     <img src="img/L_Atelier_Lightning.svg" alt="Logo Atelier Lightning" class="logo">
                 </a>
             </div>
+            <!-- /brand -->
 
+            <!-- Übersicht über Atelier, Indoor, Outdoor -->
             <div id="nav2">
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
@@ -101,16 +91,14 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="link-active"><a href="atelier.html">ATELIER <span class="sr-only">(current)</span></a></li>
+                                <li><a href="atelier.html">ATELIER</a></li>
                                 <li><a href="indoor.html">INDOOR</a></li>
                                 <li><a href="outdoor.html">OUTDOOR</a></li>
-
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -118,9 +106,11 @@
                     <!-- /.container-fluid -->
                 </nav>
             </div>
+            <!-- /#nav2 -->
         </header>
-        <content>
 
+
+        <content>
             <div class="row">
                 <div class="col-xs-10 col-sm-6 col-md-6">
                     <h2>Kontakt</h2>
@@ -230,9 +220,9 @@
                     </form>
                 </div>
                 <!-- /column -->
-                
+
                 <!-- Adresse -->
-                    <div class="col-xs-8 col-sm-6 col-md-6">
+                <div class="col-xs-8 col-sm-6 col-md-6">
                     <h4>Atelier Lightning</h4>
                     <p class="address">Risigasse 5
                         <br>5742 Kölliken
@@ -242,7 +232,7 @@
                     <br>
                     <br>
                     <br>
-                    
+
                     <!-- Fügt Karte ein -->
                     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
                     <div style="overflow:hidden;height:300px;width:420px;">
@@ -254,7 +244,7 @@
                             }
 
                         </style>
-                        
+
                         <a class="google-map-code" href="http://www.pureblack.de/google-maps/" id="get-map-data">google maps</a></div>
                     <script type="text/javascript">
                         function init_map() {
@@ -283,17 +273,18 @@
             </div>
 
         </content>
-
-        <footer class="footer">
-            <div class="container ">
-                <p class="text-muted "> 2016 Atelier Lightning
-                    <br><a href="atelier.html">Dokumentation</a>
-                    <br> </p>
-            </div>
-        </footer>
-
     </div>
-</body>
 
+
+
+    <footer class="footer">
+        <div class="container" id="footer-text">
+            <p class="text-muted ">© 2016 Atelier Lightning
+                <br><a href="dokumentation.html">Dokumentation</a>
+                <br> </p>
+        </div>
+        <!-- /.container /#footer-text -->
+    </footer>
+</body>
 
 </html>

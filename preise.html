@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Atelier Lightning </title>
 
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
@@ -16,8 +17,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-
-
     <link href="bootstrap-3.3.6/docs/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap-slider.min.css">
@@ -27,16 +26,17 @@
 <body>
     <div id="wrapper">
         <header>
+            <!-- Logo Navigation -->
             <div id="nav1">
+                <!-- Preise -->
                 <figure class="figure">
                     <div id="nav-icon">
-                        <a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round figure-img img-fluid img-rounded"></a>
-                        <figcaption class="figure-caption">Teilen</figcaption>
+                        <a href="preise.html"><img src="img/icons/prices.svg" alt="Logo Preise" class="round figure-img img-fluid img-rounded"></a>
+                        <figcaption class="figure-caption">Preise</figcaption>
                     </div>
                 </figure>
 
-
-
+                <!-- About -->
                 <figure class="figure">
                     <div id="nav-icon">
                         <a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round figure-img img-fluid img-rounded"></a>
@@ -44,12 +44,16 @@
                     </div>
                 </figure>
 
+                <!--Kontakt  -->
                 <figure class="figure">
                     <div id="nav-icon">
                         <a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round figure-img img-fluid img-rounded"></a>
                         <figcaption class="figure-caption">Kontakt</figcaption>
                     </div>
                 </figure>
+
+
+                <!-- Versteckt Logos beim Start und blendet sie dann beim Hovern ein. -->
                 <script>
                     $(".figure-caption").hide();
 
@@ -63,14 +67,19 @@
                     });
 
                 </script>
+
             </div>
+            <!-- /#nav1 -->
             <br>
+            <!-- Brand -->
             <div>
-                <a href="index.html">
+                <a href="home.html">
                     <img src="img/L_Atelier_Lightning.svg" alt="Logo Atelier Lightning" class="logo">
                 </a>
             </div>
+            <!-- /brand -->
 
+            <!-- Übersicht über Atelier, Indoor, Outdoor -->
             <div id="nav2">
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
@@ -91,14 +100,16 @@
                                 <li><a href="indoor.html">INDOOR</a></li>
                                 <li><a href="outdoor.html">OUTDOOR</a></li>
                             </ul>
-
                         </div>
                         <!-- /.navbar-collapse -->
                     </div>
                     <!-- /.container-fluid -->
                 </nav>
             </div>
+            <!-- /#nav2 -->
         </header>
+
+
 
         <content>
             <div class="row">
@@ -111,9 +122,9 @@
                     <br>
                     <div class="row">
                         <div class="col-sm-3 col-lg-3"></div>
-                        <div class="col-sm-6 col-lg-3">
+                        <div class="col-sm-6 col-lg-6">
 
-                              <!-- Zweck der Portraitfotografie. value = Preis -->
+                            <!-- Zweck der Portraitfotografie. value = Preis -->
                             <select id="firstSelect">
                                 <option value="none">Bitte wählen Sie</option>
                                 <option value=30>Hochzeit</option>
@@ -128,7 +139,7 @@
                     </div>
                     <br>
 
-                      <!-- Wird erst angezeigt, sobald eine Auswahl getroffen wurde -->
+                    <!-- Wird erst angezeigt, sobald eine Auswahl getroffen wurde -->
                     <p class="verstecken">Ihre Auswahl: <span id="text"></span></p>
                     <br>
                     <br>
@@ -137,7 +148,7 @@
                         <div class="col-sm-3 col-lg-3"></div>
                         <div class="col-sm-6 col-lg-6">
 
-                           <!-- Auswahl, wie lange Fotografie dauern soll. Wird erst angezeigt, nachdem oben eine Auswahl getroffen wurde -->
+                            <!-- Auswahl, wie lange Fotografie dauern soll. Wird erst angezeigt, nachdem oben eine Auswahl getroffen wurde -->
                             <div class="verstecken">
                                 <p>Wie lange soll das dauern?</p>
                                 <br>
@@ -154,12 +165,12 @@
                 <div class="col-sm-3 col-md-3"></div>
             </div>
         </content>
-        
-        
+
+
         <script>
             // Versteckt die p's mit der Klasse .verstecken. 
             $(".verstecken").hide();
-            
+
             // Wenn Zweck gewählt wurde, wird angezeigt, welche Auswahl man gewählt hat. Die nächsten Schritte werden eingeblendet, .verstecken wird also sichtbar. 
             $("#firstSelect").change(function() {
                 // Holt den ausgewählten Zweck. 
@@ -205,15 +216,17 @@
             });
 
         </script>
-        <footer class="footer">
-            <div class="container ">
-                <p class="text-muted "> 2016 Atelier Lightning
-                    <br> Link zu unserer Dokumentation
-                    <br> </p>
-            </div>
-        </footer>
-
     </div>
+
+
+    <footer class="footer">
+        <div class="container" id="footer-text">
+            <p class="text-muted ">© 2016 Atelier Lightning
+                <br><a href="dokumentation.html">Dokumentation</a>
+                <br> </p>
+        </div>
+        <!-- /.container /#footer-text -->
+    </footer>
 </body>
 
 </html>
