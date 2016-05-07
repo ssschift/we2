@@ -19,7 +19,7 @@ body {
 }
 
 header {
-	margin: 20px 0;
+	margin: 20px 0 0 40px;
 	padding: 0 0 2px;
 	height: 180%;
 }
@@ -63,7 +63,7 @@ a:visited {
 /*****************Enter*****************************/
 
 .site-wrapper {
-	background-image: url("img2/027.jpg");
+	background-image: url("img/index/027.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -102,6 +102,7 @@ a:visited {
     width: 130px;
     height: 35px;
     float: right;
+    margin-right: 40px;
 }
 
 #nav-icon {
@@ -135,6 +136,8 @@ li {
 .navbar-default {
 	background-image: linear-gradient(to bottom, #efefef 0, #efefef 100%);
 	border: none;
+    -webkit-box-shadow: none;
+    box-shadow:none;
 }
 
 #nav2 ul {
@@ -175,6 +178,11 @@ ul {
 
 #nav2 ul li a.link-active {
     border-bottom: 1px solid;
+}
+
+figcaption {
+    margin-top:5px;
+    font-size:1.2rem;
 }
 
 /*****************Gallery*****************************/
@@ -234,6 +242,11 @@ output {
 	cursor: url(img/cursor.png), auto;
 }
 
+
+
+
+
+/***********Footer***************/
 .footer {
 	clear: both;
 	bottom: 0;
@@ -250,6 +263,10 @@ output {
 #footer-text {
     text-align: left !important;
     float: left;
+}
+
+.container, .text-muted{
+    margin:5px 0 !important;
 }
 
 #container {

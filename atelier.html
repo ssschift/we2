@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>Atelier Lightning </title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -16,60 +17,58 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-
-
     <link href="bootstrap-3.3.6/docs/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script language="javascript" type="text/javascript" src="js/functions.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+    <script language="javascript" type="text/javascript" src="js/bootstrap-slider.min.js"></script>
 </head>
 
 <body>
+
+
+
     <div id="wrapper">
         <header>
-			<div id="nav1">
-				<figure class="figure">
-					<div id="nav-icon">
-						<a href="preise.html"><img src="img/icons/facebook.svg" alt="Logo Facebook" class="round figure-img img-fluid img-rounded"></a>
-						<figcaption class="figure-caption">Teilen</figcaption>
-					</div>
-				</figure>
+            <div id="nav1">
+                <figure class="figure">
+                    <div id="nav-icon">
+                        <a href="preise.html"><img src="img/icons/prices.svg" alt="Logo Preise" class="round figure-img img-fluid img-rounded"></a>
+                        <figcaption class="figure-caption">Preise</figcaption>
+                    </div>
+                </figure>
 
 
 
-				<figure class="figure">
-					<div id="nav-icon">
-						<a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round figure-img img-fluid img-rounded"></a>
-						<figcaption class="figure-caption">About</figcaption>
-					</div>
-				</figure>
+                <figure class="figure">
+                    <div id="nav-icon">
+                        <a href="about.html"><img src="img/icons/about.svg" alt="Logo About" class="round figure-img img-fluid img-rounded"></a>
+                        <figcaption class="figure-caption">About</figcaption>
+                    </div>
+                </figure>
 
-				<figure class="figure">
-					<div id="nav-icon">
-						<a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round figure-img img-fluid img-rounded"></a>
-						<figcaption class="figure-caption">Kontakt</figcaption>
-					</div>
-				</figure>
-				<script>
-					$(".figure-caption").hide();
-					
-					$(document).ready(function() {
-					$(".figure").hover(function() {
-						$(this).find(".figure-caption").fadeIn(200);},
-							function() {
-								$(this).find('.figure-caption').fadeOut(50);
-							});
+                <figure class="figure">
+                    <div id="nav-icon">
+                        <a href="contact.html"><img src="img/icons/contact.svg" alt="Logo Contact" class="round figure-img img-fluid img-rounded"></a>
+                        <figcaption class="figure-caption">Kontakt</figcaption>
+                    </div>
+                </figure>
+                <script>
+                    $(".figure-caption").hide();
 
-					});
+                    $(document).ready(function() {
+                        $(".figure").hover(function() {
+                                $(this).find(".figure-caption").fadeIn(200);
+                            },
+                            function() {
+                                $(this).find('.figure-caption').fadeOut(50);
+                            });
+                    });
 
-				</script>
-
-			</div>
-
-
+                </script>
+            </div>
             <br>
-
             <div>
-                <a href="index.html">
+                <a href="atelier.html">
                     <img src="img/L_Atelier_Lightning.svg" alt="Logo Atelier Lightning" class="logo">
                 </a>
             </div>
@@ -91,10 +90,11 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li><a class="link-active" href="atelier.html">ATELIER</a></li>
+                                <li><a href="atelier.html">ATELIER</a></li>
                                 <li><a href="indoor.html">INDOOR</a></li>
                                 <li><a href="outdoor.html">OUTDOOR</a></li>
                             </ul>
+
                         </div>
                         <!-- /.navbar-collapse -->
                     </div>
@@ -105,17 +105,92 @@
         <content>
 
 
-        </content>
-        
-        <footer class="footer">
-            <div class="container ">
-                <p class="text-muted "> 2016 Atelier Lightning
-                    <br> Link zu unserer Dokumentation
-                    <br> </p>
-            </div>
-        </footer>
+            <div id="uebersicht">
 
+
+                <div class="row" id="block1">
+                    <div class="col-xs-12 col-md-4">
+                        <a href="slide_atelier.html?name=2_0037_rechteck" class="">
+                            <picture>
+                                <source media="(max-width:320px)" srcset="img/atelier/320/2_0037_rechteck_320.jpg">
+                                <source media="(max-width:640px)" srcset="img/atelier/640/2_0037_rechteck_640.jpg">
+                                <source media="(max-width:992px)" srcset="img/atelier/1024/2_0037_rechteck_1024.jpg">
+                                <img src="img/atelier/640/2_0037_rechteck_640.jpg" alt="Logo" class="img-responsive img-center center-block">
+                            </picture>
+                        </a>
+                    </div>
+
+
+                    <div class="col-xs-12 col-md-4">
+                        <a href="slide_atelier.html?name=135" class="">
+                            <picture>
+                                <source media="(max-width:320px)" srcset="img/atelier/320/135_320.jpg">
+                                <source media="(max-width:640px)" srcset="img/atelier/640/135_640.jpg">
+                                <source media="(max-width:992px)" srcset="img/atelier/1024/135_1024.jpg">
+                                <img src="img/atelier/640/135_640.jpg" alt="Logo" class="img-responsive img-center center-block">
+                            </picture>
+                        </a>
+                    </div>
+
+
+                    <div class="col-xs-12 col-md-4">
+                        <a href="slide_atelier.html?name=Elastomer_Dichtungen_Titel" class="">
+                            <picture>
+                                <source media="(max-width:320px)" srcset="img/atelier/320/Elastomer_Dichtungen_Titel_320.jpg">
+                                <source media="(max-width:640px)" srcset="img/atelier/640/Elastomer_Dichtungen_Titel_640.jpg">
+                                <source media="(max-width:992px)" srcset="img/atelier/1024/Elastomer_Dichtungen_Titel_1024.jpg">
+                                <img src="img/atelier/640/Elastomer_Dichtungen_Titel_640.jpg" alt="Logo" class="img-responsive img-center center-block">
+                            </picture>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+                <div class="row" id="block2">
+
+                    <div class="col-xs-12 col-md-4">
+                        <a href="slide_atelier.html?name=f_mit_Schatten" class="">
+                            <picture>
+                                <source media="(max-width:320px)" srcset="img/atelier/320/f_mit_Schatten_320.jpg">
+                                <source media="(max-width:640px)" srcset="img/atelier/640/f_mit_Schatten_640.jpg">
+                                <source media="(max-width:992px)" srcset="img/atelier/1024/f_mit_Schatten_1024.jpg">
+                                <img src="img/atelier/640/f_mit_Schatten_640.jpg" alt="Logo" class="img-responsive img-center center-block">
+                            </picture>
+                        </a>
+                    </div>
+
+
+
+                    <div class="col-xs-12 col-md-4">
+                        <a href="slide_atelier.html?name=Titel_Graphit_neu_A" class="">
+                            <picture>
+                                <source media="(max-width:320px)" srcset="img/atelier/320/Titel_Graphit_neu_A_320.jpg">
+                                <source media="(max-width:640px)" srcset="img/atelier/640/Titel_Graphit_neu_A_640.jpg">
+                                <source media="(max-width:992px)" srcset="img/atelier/1024/Titel_Graphit_neu_A_1024.jpg">
+                                <img src="img/atelier/640/Titel_Graphit_neu_A_640.jpg" alt="Logo" class="img-responsive img-center center-block">
+                            </picture>
+                        </a>
+                    </div>
+
+
+                  
+                </div>
+            </div>
+
+
+
+        </content>
+    </div>
+    <footer class="footer">
+        <div class="container" id="footer-text">
+            <p class="text-muted ">(c) 2016 Atelier Lightning
+                <br><a href="atelier.html">Dokumentation</a>
+                <br> </p>
         </div>
+    </footer>
+
 </body>
 
 

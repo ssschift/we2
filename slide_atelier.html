@@ -87,18 +87,18 @@
 						var pathname = window.location.href;
 						var pathname_seperate = pathname.split("name=");
 						var filename = pathname_seperate[1];
-						var collection = ["0037", "006", "027", "050", "438", "2856"];
+						var collection = ["2_0037_rechteck", "135", "Elastomer_Dichtungen_Titel", "f_mit_Schatten", "Titel_Graphit_neu_A",];
 						var index = collection.indexOf(filename);
 
 						var counter = 0;
 
 						while (counter <= (collection.length - 1)) {
 							if (counter == 0) {
-								var text_active = "<div class='item active'><a href='index.html' class='gal'><img src='img/index/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
+								var text_active = "<div class='item active'><a href='index.html' class='gal'><img src='img/atelier/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
 								counter += 1;
 							} else {
 								filename = collection[index];
-								var text_active = "<div class='item'><a href='index.html' class='gal'><img src='img/index/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
+								var text_active = "<div class='item'><a href='index.html' class='gal'><img src='img/atelier/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
 								counter += 1;
 							}
 
