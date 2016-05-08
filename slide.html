@@ -5,22 +5,16 @@
     <meta charset="utf-8">
     <title>Atelier Lightning </title>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
     <link href="bootstrap-3.3.6/docs/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap-slider.min.css">
-    <script language="javascript" type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+
 </head>
 
 <body>
@@ -51,23 +45,6 @@
                         <figcaption class="figure-caption">Kontakt</figcaption>
                     </div>
                 </figure>
-
-
-                <!-- Versteckt Logos beim Start und blendet sie dann beim Hovern ein. -->
-                <script>
-                    $(".figure-caption").hide();
-
-                    $(document).ready(function() {
-                        $(".figure").hover(function() {
-                                $(this).find(".figure-caption").fadeIn(200);
-                            },
-                            function() {
-                                $(this).find('.figure-caption').fadeOut(50);
-                            });
-                    });
-
-                </script>
-                
             </div>
             <!-- /#nav1 -->
             <br>
@@ -79,7 +56,7 @@
             </div>
             <!-- /brand -->
 
-           <!-- Übersicht über Atelier, Indoor, Outdoor -->
+            <!-- Übersicht über Atelier, Indoor, Outdoor -->
             <div id="nav2">
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
@@ -108,10 +85,10 @@
             </div>
             <!-- /#nav2 -->
         </header>
-      
-       
-       
-       
+
+
+
+
         <content>
             <!-- Startet Bootstrap Carousel Div -->
             <div id="myCarousel" class="carousel slide">
@@ -119,43 +96,6 @@
                 <!-- Wrapper für Slides -->
                 <div class="carousel-inner" role="listbox">
 
-                    <!-- Liest URL aus, filtert Variable heraus, sucht Variable in Array aus verfügbaren Bildern, und startet dann mit dem angeklickten Bild -->
-                    <script>
-                        // Filtert Variable aus URL heraus und speichert sie in "filename"
-                        var pathname = window.location.href;
-                        var pathname_seperate = pathname.split("name=");
-                        var filename = pathname_seperate[1];
-
-                        // Sucht Variable im Array "collection" und speichert ihren Index
-                        var collection = ["0037", "006", "027", "050", "438", "2856"];
-                        var index = collection.indexOf(filename);
-
-                        //Counter, damit richtige Anzahl der Bilder geladen werden
-                        var counter = 0;
-
-                        // Solange Counter noch nicht grösser als Anzahl Elemente in "collections", erstelle Div-Tags, die dann als Slider-Elemente angezeigt werden
-                        while (counter <= (collection.length - 1)) {
-                            //Wenn Counter == 0 ist es das erste Element und wird mit "item active" versehen
-                            if (counter == 0) {
-                                var text_active = "<div class='item active'><a href='home.html' class='gal'><img src='img/index/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
-                                counter += 1;
-                            //Wenn Counter !== 0, sind es nachfolgende Elemente und werden als nächste Bilder dem Slider  hinzugefügt
-                            } else {
-                                filename = collection[index];
-                                var text_active = "<div class='item'><a href='home.html' class='gal'><img src='img/index/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
-                                counter += 1;
-                            }
-                            
-                            // Vergewissert, dass auch alle Bilder geladen werden, wenn das Bild mit Index 3 als erstes geladen wird. Sobald am Ende des Arrays angelangt, beginnt er von vorne, bis "counter" die While-Schleife abbricht. 
-                            if (index == collection.length - 1) {
-                                index = 0;
-                            } else {
-                                index += 1;
-                            }
-
-                            $(".carousel-inner").append(text_active);
-                        };
-                    </script>
                 </div>
 
                 <!-- Links und Rechts Symbole -->
@@ -185,6 +125,66 @@
         </div>
         <!-- /.container /#footer-text -->
     </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+    <!-- Versteckt Logos beim Start und blendet sie dann beim Hovern ein. -->
+    <script>
+        $(".figure-caption").hide();
+
+        $(document).ready(function() {
+            $(".figure").hover(function() {
+                    $(this).find(".figure-caption").fadeIn(200);
+                },
+                function() {
+                    $(this).find('.figure-caption').fadeOut(50);
+                });
+        });
+
+
+        // Liest URL aus, filtert Variable heraus, sucht Variable in Array aus verfügbaren Bildern, und startet dann mit dem angeklickten Bild -->
+
+        // Filtert Variable aus URL heraus und speichert sie in "filename"
+        var pathname = window.location.href;
+        var pathname_seperate = pathname.split("name=");
+        var filename = pathname_seperate[1];
+
+        // Sucht Variable im Array "collection" und speichert ihren Index
+        var collection = ["0037", "006", "027", "050", "438", "2856"];
+        var index = collection.indexOf(filename);
+
+        //Counter, damit richtige Anzahl der Bilder geladen werden
+        var counter = 0;
+
+        // Solange Counter noch nicht grösser als Anzahl Elemente in "collections", erstelle Div-Tags, die dann als Slider-Elemente angezeigt werden
+        while (counter <= (collection.length - 1)) {
+            //Wenn Counter == 0 ist es das erste Element und wird mit "item active" versehen
+            if (counter == 0) {
+                var text_active = "<div class='item active'><a href='home.html' class='gal'><img src='img/index/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
+                counter += 1;
+                //Wenn Counter !== 0, sind es nachfolgende Elemente und werden als nächste Bilder dem Slider  hinzugefügt
+            } else {
+                filename = collection[index];
+                var text_active = "<div class='item'><a href='home.html' class='gal'><img src='img/index/1024/" + filename + "_1024.jpg' alt=" + filename + "></a>";
+                counter += 1;
+            }
+
+            // Vergewissert, dass auch alle Bilder geladen werden, wenn das Bild mit Index 3 als erstes geladen wird. Sobald am Ende des Arrays angelangt, beginnt er von vorne, bis "counter" die While-Schleife abbricht. 
+            if (index == collection.length - 1) {
+                index = 0;
+            } else {
+                index += 1;
+            }
+
+            $(".carousel-inner").append(text_active);
+        };
+
+    </script>
+
+
 </body>
 
 </html>
